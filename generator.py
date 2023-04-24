@@ -1,6 +1,6 @@
 import random
 from js import document
-from pyodide import create_proxy
+from pyodide.ffi import create_proxy
 
 def generate(event):
         s = "Your random number is " + str(random.randint(1,100))
